@@ -7,7 +7,10 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1440px",
+      xxl: "1500px"
     },
+    // p-[10px] xl:px-[255px] 
+    // lg:px-[24px]
     colors: {
       pri: "#FE7450",
       "pri-l": "#FAB9A9",

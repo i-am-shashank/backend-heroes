@@ -21,28 +21,28 @@ export default function Events() {
         return (
           <div
             key={i}
-            className="flex flex-col w-[100%] text-black bg-off-white rounded-md shadow-sm mb-[24px] p-[18px]"
+            className="flex flex-col lg:w-[60vw] xl:w-full text-black bg-off-white rounded-md shadow-sm mb-[24px] p-[18px]"
           >
             <div className="flex justify-between">
               <div className="flex items-center ">
                 <img
-                  className="mr-[8px] rounded-full h-[64px] w-[64px]"
+                  className="mr-[8px] rounded-full h-[46px] w-[46px] lg:h-[64px] lg:w-[64px]"
                   alt="author"
                   src={event.imgURL}
                 />
                 <div>
-                  <p className="text-[18px]">{event.name}</p>
-                  <p className="text-[16px]">{event.time}</p>
+                  <p className="text-[16px] lg:text-[18px]">{event.name}</p>
+                  <p className="text-[11px] lg:text-[16px]">{event.time}</p>
                 </div>
               </div>
-              <p className="bg-sec text-white h-max px-2 py-1 rounded-md opacity-[0.9]">
+              <p className="bg-sec text-[12px] lg:text-[14px] text-white h-max px-2 py-1 rounded-md opacity-[0.9]">
                 {event.date}
               </p>
             </div>
-            <div className="my-[18px] text-[32px] font-bold ">
+            <div className="my-[18px] text-[24px] lg:text-[32px] font-bold ">
               {event.content}
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center text-[14px] lg:text-[16px]">
               <MdOutlineFrontHand className="mr-[4px]" />{" "}
               <p className="mr-[1rem]">{event.attending} attending</p>
               <BiCalendarEvent className="mr-[4px]" />{" "}

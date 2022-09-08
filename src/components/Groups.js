@@ -73,28 +73,28 @@ export default function Groups() {
         return (
           <div
             key={i}
-            className="w-[218px] h-[201px] flex flex-col justify-between px-[12px] py-[8px] bg-off-white active:scale-[0.99] hover:shadow-lg rounded-md shadow-md cursor-pointer mb-[32px] ml-[12px]"
+            className="w-[100%] md:w-[218px] h-[201px] flex flex-col justify-between px-[12px] py-[8px] bg-off-white active:scale-[0.99] hover:shadow-lg rounded-md shadow-md cursor-pointer mb-[32px] lg:mx-[8px]"
           >
             <p className="font-bold text-pri text-[24px]">{group.title}</p>
             <p className="text-[16px] text-black">
               {group.content.substring(0, 85)}...
             </p>
             <div className="flex justify-between items-center">
-              <>
+              <div className="flex">
                 {group.tags.map((tag, i) => {
                   return (
                     <p
-                      className="text-[11px] text-white bg-sec rounded-md w-max px-[4px] opacity-[0.8]"
+                      className="text-[11px] mr-2 text-white bg-sec rounded-md w-max px-[4px] opacity-[0.8]"
                       key={i}
                     >
                       {tag}
                     </p>
                   );
                 })}
-              </>
-
+              </div>
               <div className="flex text-black text-[14px] items-center">
-                <MdGroups /> {group.members}
+                <MdGroups className="ml-[8px] mr-[4px] text-[20px]" />{" "}
+                {group.members}
               </div>
             </div>
           </div>
