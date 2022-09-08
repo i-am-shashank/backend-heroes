@@ -9,8 +9,6 @@ module.exports = {
       xl: "1440px",
       xxl: "1500px"
     },
-    // p-[10px] xl:px-[255px] 
-    // lg:px-[24px]
     colors: {
       pri: "#FE7450",
       "pri-l": "#FAB9A9",
@@ -21,7 +19,11 @@ module.exports = {
       gray: "#C2D0D9",
       "off-white": "#EEEEEE",
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        hero: 'url("https://res.cloudinary.com/dwmwpmrpo/image/upload/v1662388675/icpzixt53lrqzbimmgir.png")'
+      }
+    },
   },
   plugins: [],
 };

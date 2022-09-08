@@ -3,7 +3,7 @@ import { HiOutlineCursorClick } from "react-icons/hi";
 export default function Layout({ children }) {
   return (
     <>
-      <div className="flex justify-between p-[10px] xxl:px-[255px] xxl:py-[14px] lg:px-[24px] bg-white">
+      <div className="relative flex justify-between p-[10px] xxl:px-[255px] xxl:py-[14px] lg:px-[24px] bg-white">
         <img
           alt="Backend Heroes"
           className="scale-[0.9]"
